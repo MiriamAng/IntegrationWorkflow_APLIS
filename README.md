@@ -4,7 +4,15 @@ Framework based on HL7 messaging and freely available digital pathology (DP) res
 > [!CAUTION]
 > All software (except for the AP-LIS) and DL models employed in this work are non-commercial, open-source resources intended for research use only. Hence, use of the integration workflow outside of research context is under the responsibility of the user.
 
+> [!TIP]
+> 1. Once you download the code, please make sure to replace in the main.py script the variables storing the IP addresses as server (*hs*) and clienti (*hc*) with the corrisponding ports (*ps* and *pc*)
+> 2. The developed framework was tested using AMD GPUs, but if you have NVIDIA GPUs please install pytorch accordingly
 
+> Note
+> This is a note
+
+## Installation
+### Install 
 
 ## Citation
 If you find our work useful, please cite [our preprint](https://www.biorxiv.org/content/10.1101/2024.07.11.603091v1)!
