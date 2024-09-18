@@ -2,12 +2,19 @@
 A standardized, open-source framework to integrate both <ins>publicly available</ins> and <ins>custom developed</ins> deep-learning (DL) models into the anatomic pathology laboratory information system (AP-LIS).
 The developed integration framework relies on a Python-based server-client architecture to: 
 1. interconnect the AP-LIS with an AI-based decision support sistem (AI-DSS) via HL7 messaging
+
+<p align="center">
+  <img src="https://github.com/MiriamAng/IntegrationFramework_APLIS/blob/main/docs/integration_framework.png" width="600" />
+</p>
+  
 2. run DL model deployment using freely available resources ([WSInfer](https://github.com/SBU-BMI/wsinfer), [WSInfer-MIL](https://github.com/SBU-BMI/wsinfer-mil), [marugoto](https://github.com/KatherLab/marugoto))
+
 3. provide an intuitive visualization of model inference results through colored heatmaps in [QuPath](https://qupath.github.io/)
+<p align="center">
+  <img src="https://github.com/MiriamAng/IntegrationFramework_APLIS/blob/main/docs/visualization_styles.PNG" width="700" />
+</p>
 
-![alt text](https://github.com/MiriamAng/IntegrationFramework_APLIS/blob/main/docs/visualization_styles.PNG)
-
-
+  
 > [!CAUTION]
 > All DL models employed in this work as well as the freely available software used for DL model deployment and visualization are non-commercial, open-source resources intended for research use only. Hence, use of the integration framework outside of research context is under the responsibility of the user.
 
@@ -15,7 +22,7 @@ The developed integration framework relies on a Python-based server-client archi
 > 1. Once you download the code, please make sure to replace in the main.py script the variables storing the IP addresses as server (*hs*) and clienti (*hc*) with the corrisponding ports (*ps* and *pc*)
 > 2. The developed framework was tested using AMD GPUs, but if you have NVIDIA GPUs please install pytorch accordingly
 
-> Note
+> [!NOTE]
 > The script is customized to run with mrxs files but it can be customized to run with other file formats as well.
 > wsinfer-mil and marugoto scripts were costumized according to what written in the manuscript.
 > The code was written to take into account multiple segment pairs associated with a given HL7 message, but at the end only one per patient was used.
