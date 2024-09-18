@@ -5,6 +5,9 @@ The developed integration framework relies on a Python-based server-client archi
 2. run DL model deployment using freely available resources ([WSInfer](https://github.com/SBU-BMI/wsinfer), [WSInfer-MIL](https://github.com/SBU-BMI/wsinfer-mil), [marugoto](https://github.com/KatherLab/marugoto))
 3. provide an intuitive visualization of model inference results through colored heatmaps in [QuPath](https://qupath.github.io/)
 
+![alt text](https://github.com/MiriamAng/IntegrationFramework_APLIS/blob/main/docs/visualization_styles.tif)
+
+
 > [!CAUTION]
 > All DL models employed in this work as well as the freely available software used for DL model deployment and visualization are non-commercial, open-source resources intended for research use only. Hence, use of the integration framework outside of research context is under the responsibility of the user.
 
