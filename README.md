@@ -23,13 +23,11 @@ The developed integration framework relies on a Python-based server-client archi
 > 2. The developed framework was tested using AMD GPUs, but if you have NVIDIA GPUs please install pytorch accordingly
 
 > [!NOTE]
-> The script is customized to run with mrxs files but it can be customized to run with other file formats as well.
-> wsinfer-mil and marugoto scripts were costumized according to what written in the manuscript.
-> The code was written to take into account multiple segment pairs associated with a given HL7 message, but at the end only one per patient was used.
-> The code assumes that you are working with mrxs, where the output of the scanning is a folder containing the dat file and the ini file --> need to create the associated mrxs file to open it in QuPath.
-> The script assume that we have a csv file called encodings_DL containing all the DL models information
-> The model name assigned to your models should be the same as the name that you put in the fields XX and XX of the SPM segment
-> Although the code assumes that you can run multiple slide per time, the main script is thought to run with only one slide per patient
+> 1. The scripts have been developed and tested using WSIs in MRXS format. Hence: (i) a directory exists storing a file named Slidedat.ini; (ii) an mrxs file needs to be created in the same location as the directory, with the same name as the directory plus the .mrxs extension in order to be opened in Qupath.
+> 2. [WSInfer-MIL](https://github.com/SBU-BMI/wsinfer-mil) and [marugoto](https://github.com/KatherLab/marugoto) source codes were partially costumized. Please refer to the Supplementary Material of [our preprint](https://www.biorxiv.org/content/10.1101/2024.07.11.603091v1) for detailed information on how the scripts were modified to comply with our framework's requirements. 
+> 3. The code was written to take into account multiple segment pairs associated with a given HL7 message, but at the end only one per patient was used.
+> The scripts assume that you have a CSV file called encodings_DL.csv containing information on the the integrated DL models to deploy. An example of encodings_DL.csv file can be downloaded found [here
+> The fields 4.1 and 4.2 of the SPM segment of the input OML^O33 HL7 message should be populated with the name of the DL model as indicated in column
 
 ## Installation
 
