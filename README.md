@@ -1,8 +1,12 @@
 # Closing the gap in the clinical adoption of computational pathology: a standardized, open-source framework to integrate deep-learning algorithms into the laboratory information system
-Framework based on HL7 messaging and freely available digital pathology (DP) resources to integrate deep-learning models into the anatomic pathology laboratory information system (AP-LIS)
+A standardized, open-source framework to integrate both <ins>publicly available</ins> and <ins>custom developed</ins> deep-learning (DL) models into the anatomic pathology laboratory information system (AP-LIS).
+The developed integration framework relies on a Python-based server-client architecture to: 
+1. interconnect the AP-LIS with an AI-based decision support sistem (AI-DSS) via HL7 messaging
+2. run DL model deployment using freely available resources ([WSInfer](https://github.com/SBU-BMI/wsinfer), [WSInfer-MIL](https://github.com/SBU-BMI/wsinfer-mil), [marugoto](https://github.com/KatherLab/marugoto))
+3. provide an intuitive visualization of model inference results through colored heatmaps in [QuPath](https://qupath.github.io/)
 
 > [!CAUTION]
-> All software (except for the AP-LIS) and DL models employed in this work are non-commercial, open-source resources intended for research use only. Hence, use of the integration workflow outside of research context is under the responsibility of the user.
+> All DL models employed in this work as well as the freely available software used for DL model deployment and visualization are non-commercial, open-source resources intended for research use only. Hence, use of the integration framework outside of research context is under the responsibility of the user.
 
 > [!TIP]
 > 1. Once you download the code, please make sure to replace in the main.py script the variables storing the IP addresses as server (*hs*) and clienti (*hc*) with the corrisponding ports (*ps* and *pc*)
@@ -18,7 +22,6 @@ Framework based on HL7 messaging and freely available digital pathology (DP) res
 > Although the code assumes that you can run multiple slide per time, the main script is thought to run with only one slide per patient
 
 ## Installation
-### Install 
 
 ## Citation
 If you find our work useful, please cite [our preprint](https://www.biorxiv.org/content/10.1101/2024.07.11.603091v1)!
