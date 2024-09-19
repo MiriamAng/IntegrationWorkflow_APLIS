@@ -7,6 +7,20 @@ A standardized, open-source framework to integrate both <ins>publicly available<
 > [!CAUTION]
 > All DL models employed in this work as well as the freely available software used for DL model deployment and visualization are non-commercial, open-source resources intended for research use only. Hence, use of the integration framework outside of research context is under the responsibility of the user.
 
+
+## Reference publication
+If you use our work or parts of it, please cite [our preprint](https://www.biorxiv.org/content/10.1101/2024.07.11.603091v1)!
+```bash
+@article{angeloni2024closing,
+  title={Closing the gap in the clinical adoption of computational pathology: a standardized, open-source framework to integrate deep-learning algorithms into the laboratory information system},
+  author={Angeloni, Miriam and Rizzi, Davide and Schoen, Simon and Caputo, Alessandro and Merolla, Francesco and Hartmann, Arndt and Ferrazzi, Fulvia and Fraggetta, Filippo},
+  journal={bioRxiv},
+  year={2024},    
+  doi={https://doi.org/10.1101/2024.07.11.603091}
+}
+```
+
+
 # How it works
 The developed integration framework relies on a Python-based server-client architecture to: 
 1. interconnect the AP-LIS with an AI-based decision support sistem (AI-DSS) via HL7 messaging
@@ -166,20 +180,8 @@ Example of results folder structure after running the *braf-attMIL-marugoto* mod
 To test the integration framework, you can use [Hapi Test Panel](https://hapifhir.github.io/hapi-hl7v2/hapi-testpanel/install.html) that can be downloaded from [here](https://sourceforge.net/projects/hl7api/files/hapi-testpanel/2.0.1/).
 Hapi Test Panel is as a comprehensive message editor, transmitter, and receiver designed to send, receive, and edit HL7 messages for testing purposes by allowing both transmitting HL7 messages to a specified server and listening for incoming messages. Information on Hapi Test Panel usage can be found in the official [documentation](https://hapifhir.github.io/hapi-hl7v2/hapi-testpanel/install.html).
 > [!NOTE]
-> Make sure to set-up the correct port and IP address for the server and the client according to the configuration of your system. 
+> Make sure to set-up the correct port and IP address for the server and the client according to the configuration of your system.
 
-
-## Citation
-If you find our work useful, please cite [our preprint](https://www.biorxiv.org/content/10.1101/2024.07.11.603091v1)!
-```bash
-@article{angeloni2024closing,
-  title={Closing the gap in the clinical adoption of computational pathology: a standardized, open-source framework to integrate deep-learning algorithms into the laboratory information system},
-  author={Angeloni, Miriam and Rizzi, Davide and Schoen, Simon and Caputo, Alessandro and Merolla, Francesco and Hartmann, Arndt and Ferrazzi, Fulvia and Fraggetta, Filippo},
-  journal={bioRxiv},
-  year={2024},    
-  doi={https://doi.org/10.1101/2024.07.11.603091}
-}
-```
 
 ## References
 1) Kaczmarzyk, J. R. et al. Open and reusable deep learning for pathology with WSInfer and QuPath. NPJ Precis. Oncol. 8, 9 (2024).
