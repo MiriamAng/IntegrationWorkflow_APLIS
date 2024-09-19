@@ -4,6 +4,9 @@ A standardized, open-source framework to integrate both <ins>publicly available<
 > [!WARNING]
 > This repository contains work-in-progress code that may be updated, modified, or changed frequently as development continues. Feedback are welcome!
 
+> [!CAUTION]
+> All DL models employed in this work as well as the freely available software used for DL model deployment and visualization are non-commercial, open-source resources intended for research use only. Hence, use of the integration framework outside of research context is under the responsibility of the user.
+
 # How it works
 The developed integration framework relies on a Python-based server-client architecture to: 
 1. interconnect the AP-LIS with an AI-based decision support sistem (AI-DSS) via HL7 messaging
@@ -18,9 +21,6 @@ The developed integration framework relies on a Python-based server-client archi
 <p align="center">
   <img src="https://github.com/MiriamAng/IntegrationFramework_APLIS/blob/main/docs/visualization_styles.PNG" width="700" />
 </p>
-
-> [!CAUTION]
-> All DL models employed in this work as well as the freely available software used for DL model deployment and visualization are non-commercial, open-source resources intended for research use only. Hence, use of the integration framework outside of research context is under the responsibility of the user.
 
 ## Types of HL7 messages involved in the interconnection between the AP-LIS and the AI-DSS
 All WSI analysis requests are transmitted from the AP-LIS to the AI-DSS via HL7 Laboratory Order Messages (***OML^O33***). 
