@@ -2,7 +2,7 @@
 A standardized, open-source framework to integrate both <ins>publicly available</ins> and <ins>custom developed</ins> deep-learning (DL) models into the anatomic pathology laboratory information system (AP-LIS).
 
 > [!WARNING]
-> This repository contains work-in-progress code that may be updated, modified, or changed frequently as development continues. Feedback are welcome!
+> This repository contains work-in-progress code and is currently being finalized. Please check back. 
 
 > [!CAUTION]
 > All DL models employed in this work as well as the freely available software used for DL model deployment and visualization are non-commercial, open-source resources intended for research use only. Hence, use of the integration framework outside of research context is under the responsibility of the user.
