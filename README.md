@@ -70,6 +70,7 @@ conda env create -f /path/to/IntegrationFramework_APLIS/conda_env.yml
 conda activate env_name
 ```
 
+
 Once the GitHub repository has been cloned, and the conda environment activated, in order to run the integration framework:
 1. navigate to the directory IntegrationFramework_APLIS
 ```bash
@@ -89,7 +90,8 @@ cd IntegrationFramework_APLIS
 python src/server_client_system.py
 ``` 
 
-> [!NOTE]
+
+### NOTE!
 > 1. The integration framework has been developed and tested using WSIs in MRXS format. For MRXS files, (i) a directory exists storing a file named Slidedat.ini; (ii) a mrxs file needs to be created in the same location as the directory, with the same name as the directory plus the .mrxs extension in order to be opened in Qupath. Hence, field 13 of the OBR segment of the incoming OUL^O33 message is populated with the path to a directory rather than with the path to a file (e.g., svs, ndpi).
 
 > 2. [WSInfer-MIL](https://github.com/SBU-BMI/wsinfer-mil) and [marugoto](https://github.com/KatherLab/marugoto) source codes were partially costumized. Please refer to the Supplementary Material of [our preprint](https://www.biorxiv.org/content/10.1101/2024.07.11.603091v1) for detailed information on how the scripts were modified for the purposes of our integration framework. 
@@ -98,7 +100,8 @@ python src/server_client_system.py
 
 > 4. The scripts assume that you have a CSV file called encodings_DL.csv containing information on the DL models to deploy integrated in the framework. An example of encodings_DL.csv file can be downloaded found [here](https://github.com/MiriamAng/IntegrationFramework_APLIS/blob/main/encodings_DL.csv). If want to add your own customized model to the list of available models, please make sure to update the encodings_DL.csv accordingly. 
 
-> The fields 4.1 and 4.2 of the SPM segment of the input OML^O33 HL7 message should be populated with the name of the DL model from column 'SPM_4.2' of the encodings_DL.csv file.
+> 5. The fields 4.1 and 4.2 of the SPM segment of the input OML^O33 HL7 message should be populated with the name of the DL model from column 'SPM_4.2' of the encodings_DL.csv file.
+
 
 
 ### Example of results folder structure after deployment of a DL model
@@ -153,11 +156,13 @@ Example of results folder structure after running the *braf-attMIL-marugoto* mod
                     00002548745621.h5
 ```
 
+
 ## How to test the integration framework
 To test the integration framework, you can use [Hapi Test Panel](https://hapifhir.github.io/hapi-hl7v2/hapi-testpanel/install.html) that can be downloaded from [here](https://sourceforge.net/projects/hl7api/files/hapi-testpanel/2.0.1/).
 Hapi Test Panel is as a comprehensive message editor, transmitter, and receiver designed to send, receive, and edit HL7 messages for testing purposes by allowing both transmitting HL7 messages to a specified server and listening for incoming messages. Information on Hapi Test Panel usage can be found in the official [documentation](https://hapifhir.github.io/hapi-hl7v2/hapi-testpanel/install.html).
 > [!NOTE]
 > Make sure to set-up the correct port and IP address for the server and the client according to the configuration of your system. 
+
 
 ## Citation
 If you find our work useful, please cite [our preprint](https://www.biorxiv.org/content/10.1101/2024.07.11.603091v1)!
