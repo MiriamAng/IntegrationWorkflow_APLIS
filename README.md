@@ -1,5 +1,10 @@
 # Closing the gap in the clinical adoption of computational pathology: a standardized, open-source framework to integrate deep-learning algorithms into the laboratory information system
 A standardized, open-source framework to integrate both <ins>publicly available</ins> and <ins>custom developed</ins> deep-learning (DL) models into the anatomic pathology laboratory information system (AP-LIS).
+
+> [!WARNING]
+> This repository contains work-in-progress code that may be updated, modified, or changed frequently as development continues. Feedback are welcome!
+
+# How it works
 The developed integration framework relies on a Python-based server-client architecture to: 
 1. interconnect the AP-LIS with an AI-based decision support sistem (AI-DSS) via HL7 messaging
 
