@@ -149,7 +149,6 @@ Example of results folder structure afer running one of the WSInfer built-in mod
             \---qupath-proj
                 \---00002548745622_QuPathProj-colorectal_resnet34_penn
                     |   00002548745622-colorectal_resnet34_penn.qpproj
-                    |   00002548745622-colorectal_resnet34_penn.qpproj.backup
                     |   project.qpproj.backup
                     |
                     +---classifiers
